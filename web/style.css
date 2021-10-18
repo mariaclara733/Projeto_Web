@@ -107,6 +107,10 @@ strong {
     max-width: 100%;
 }
 
+.content span {
+    padding: 0 5px;
+}
+
 .input-checkbox {
     padding-left: 15px;
 }
@@ -118,7 +122,7 @@ strong {
 
 .link {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 1095px){
