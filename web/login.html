@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon-wpp.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>WhatsApp</title>
 </head>
 <body>
@@ -39,32 +40,35 @@
                     </div>
                 </div>
             </div>
-            <div class="center">
-                <h1>Login</h1>
-                <form method="post">
-                    <div class="text-field">
-                        <input type="text" name="" value="" required id="email">
-                        <span></span>
-                        <label>E-mail</label>
-                    </div>
-                    <div class="text-field">
-                        <input type="password" name="" value="" required id="senha">
-                        <span></span>
-                        <label>Senha</label>
-                    </div>
-                    <button onclick="login()">Login</button>
-                </form>
+            <div class="login">
+              <h1>Login</h1>
+              <div class="text-field">
+                <input type="email" placeholder="Email" id="email" name="email" />
+                <div class="email-field"><span class="email-validation"></span></div>
+              </div>
+              <div class="text-field">
+                <input type="password" placeholder="Senha" id="password" name="password" />
+                <div class="password-field"><span class="password-validation"></span></div>
+                <button class="btn-login">Login</button>
+              </div>
+            </div>
+      
+            <div class="hide-logged">
+              <div class="div-logged"></div>
+              <button class="btn-logout">Sair</button>
+            </div>
+      
+            <div class="hide-search">
+              <input type="text" id="search" placeholder="Pesquise por Categoria" name="pesquisa" />
+              <button class="btn-search">Pesquisar</button>
+            </div>
+      
+            <div class="search-content">
+              <div class="search-container"></div>
             </div>
         </div>
         </section>
 
-        <script>
-            // function salvar(){
-            //     localStorage.setItem("nome", document.querySelector("#nome").value);
-            // }
-            function login() {
-                window.location.href = "index.html";
-            }
-        </script>
+        <script src="js/login.js"></script>
 </body>
 </html>
