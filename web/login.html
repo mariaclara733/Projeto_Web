@@ -42,6 +42,7 @@
             </div>
             <div class="login">
               <h1>Login</h1>
+              <p>Para fazer o login, entrar com o email: "teste@teste" e senha "123456".</p>
               <div class="text-field">
                 <input type="email" placeholder="Email" id="email" name="email" />
                 <div class="email-field"><span class="email-validation"></span></div>
@@ -49,7 +50,8 @@
               <div class="text-field">
                 <input type="password" placeholder="Senha" id="password" name="password" />
                 <div class="password-field"><span class="password-validation"></span></div>
-                <button class="btn-login">Login</button>
+                <button class="btn-login" onclick="entrar()">Login</button>
+                <button class="btn-cadastrar">Cadastrar</button>
               </div>
             </div>
       
@@ -59,9 +61,24 @@
             </div>
       
             <div class="hide-search">
-              <input type="text" id="search" placeholder="Pesquisar..." name="pesquisa" />
-              <button class="btn-search">Pesquisar</button>
-            </div>
+              <h1>Teste postar</h1>
+                <input type="text" placeholder="Nome..." name="name" id="name" class="name"/>
+                <input type="text" placeholder="Postar..." name="postar" id="post" class="post"/>
+                <button class="btn-post" onclick="postar()">Postar</button>
+
+                <div>
+                  <ul id="posts"></ul>
+                </div>
+
+                <h1>Teste pesquisas</h1>
+                <input type="text" placeholder="Pesquisar..." name="pesquisa" id="search"  class="search"/>
+                <button class="btn-search" onclick="buscar()">Pesquisar</button>
+
+                <div>
+                  <ul id="lista"></ul>
+                </div>
+
+            </div>          
       
             <div class="search-content">
               <div class="search-container"></div>
