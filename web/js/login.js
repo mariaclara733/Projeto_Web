@@ -82,7 +82,7 @@ function entrar() {
   axios.post('http://localhost:8080/entrar', {email, password})
       .then(function (res){
           loginSucessful(res.data);
-          alert("login funcionou");
+          alert("Usuário logado!");
       });
 }
 
